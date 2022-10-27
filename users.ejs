@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="admin.css">
+<div class="container_orders">
+<h1>Users</h1>
+
+<ul>
+    <% users.forEach(function(users){ %>
+     <li><strong><u>Table No:</strong><%= users.tableno %></u></li>
+     <ul>
+        <% Object.keys(users).forEach(function(key){ %>
+            <li><strong><%= key%></strong>:<%=users[key]%></li>
+        <% }); %>
+     </ul>
+    <% }); %>
+</ul>
+</div> 
